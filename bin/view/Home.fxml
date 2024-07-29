@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #d2dae2;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+   <children>
+      <Label alignment="CENTER" layoutX="-4.0" layoutY="-1.0" prefHeight="64.0" prefWidth="606.0" style="-fx-background-color: #596275;" text="Dashboard" textFill="#d4b60d">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="24.0" layoutY="116.0" onAction="#btnMemberOnAction" prefHeight="64.0" prefWidth="147.0" style="-fx-background-color: #00d8d6;" text="Members" textFill="#2d2e29">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="209.0" layoutY="116.0" onAction="#btnBookCatogoryOnAction" prefHeight="64.0" prefWidth="179.0" style="-fx-background-color: #ff793f;" text="Book Catogory" textFill="#2a2b24">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="424.0" layoutY="116.0" onAction="#btnBookOnAction" prefHeight="64.0" prefWidth="147.0" style="-fx-background-color: #0be881;" text="Books" textFill="#151514">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="226.0" layoutY="243.0" onAction="#btnBorrowingsOnAction" prefHeight="64.0" prefWidth="147.0" style="-fx-background-color: #c56cf0;" text="Borrowings" textFill="#272820">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <Button layoutX="40.0" layoutY="329.0" mnemonicParsing="false" onAction="#btnLogoutOnAction" prefHeight="46.0" prefWidth="137.0" style="-fx-background-color: #aaa69d;" text="Log out" textFill="#53101f">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

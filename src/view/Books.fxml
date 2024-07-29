@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="666.0" style="-fx-background-color: #ffeaa7;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BooksController">
+   <children>
+      <Label alignment="CENTER" layoutX="-2.0" layoutY="-1.0" prefHeight="46.0" prefWidth="666.0" style="-fx-background-color: #81ecec;" text="Books">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" alignment="CENTER" layoutX="25.0" layoutY="59.0" prefHeight="35.0" prefWidth="150.0" promptText="ID">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtAuther" alignment="CENTER" layoutX="25.0" layoutY="169.0" prefHeight="35.0" prefWidth="150.0" promptText="Auther">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtCategory" alignment="CENTER" layoutX="25.0" layoutY="226.0" prefHeight="35.0" prefWidth="150.0" promptText="Category">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtIsbn" alignment="CENTER" layoutX="25.0" layoutY="282.0" prefHeight="35.0" prefWidth="150.0" promptText="ISBN">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtNoofCopies" alignment="CENTER" layoutX="25.0" layoutY="338.0" prefHeight="35.0" prefWidth="150.0" promptText="No of Copies">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="tblBooks" layoutX="184.0" layoutY="59.0" prefHeight="200.0" prefWidth="482.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="colTitle" prefWidth="75.0" text="Title" />
+            <TableColumn fx:id="colAuther" prefWidth="75.0" text="Auther" />
+            <TableColumn fx:id="colCategory" prefWidth="75.0" text="Category" />
+            <TableColumn fx:id="colIsbn" prefWidth="90.39990234375" text="ISBN" />
+            <TableColumn fx:id="colNoofCopies" prefWidth="88.80010986328125" text="No of Copies" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtTitle" alignment="CENTER" layoutX="25.0" layoutY="118.0" prefHeight="35.0" prefWidth="150.0" promptText="Title">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <Button layoutX="215.0" layoutY="282.0" mnemonicParsing="false" onAction="#btnAddBooksOnAction" prefHeight="42.0" prefWidth="90.0" style="-fx-background-color: #ff9ff3;" text="Add" />
+      <Button layoutX="331.0" layoutY="282.0" mnemonicParsing="false" onAction="#btnEditBooksOnAction" prefHeight="42.0" prefWidth="90.0" style="-fx-background-color: #54a0ff;" text="Edit" />
+      <Button layoutX="443.0" layoutY="282.0" mnemonicParsing="false" onAction="#btnDeleteBooksOnAction" prefHeight="42.0" prefWidth="90.0" style="-fx-background-color: #0be881;" text="Delete" />
+      <Button layoutX="294.0" layoutY="338.0" mnemonicParsing="false" onAction="#btnGotoHomeOnAction" prefHeight="42.0" prefWidth="163.0" style="-fx-background-color: #ee5253;" text="Go to Home" />
+   </children>
+</AnchorPane>
